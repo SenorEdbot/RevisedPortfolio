@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-light p-0">
@@ -20,7 +22,7 @@
         </ul>
       </div>
     </nav>
-    <main>
+    <!-- <main>
       <br>
         <div class="container bg-white p-lg-5 p-md-5 mx-lg-auto mx-md-3 py-sm-3 py-xs-3">
           <div class="row">
@@ -56,11 +58,89 @@
           </div>
         </div>
       <br>
+    </main> -->
+    <!-- <div class="col col-lg-6 p-lg-3 col-md-6 p-md-3 col-sm-12 p-sm-3 col-xs-12 p-xs-3"> -->
+    <main>
+      <br>
+        <div class="container bg-white p-lg-5 p-md-5 mx-lg-auto mx-md-3 py-sm-3 py-xs-3">
+          <div class="row">
+            <h2 class="headerText">Portfolio</h2>
+          </div>
+          <hr>
+          <br>
+            <div class="row" id="portRow1">
+              <div class="card-deck">
+                <div class="card">
+                    <img class="img-fluid card-img" src="./assets/images/rpgGame2.PNG" alt="">
+                    <div class="card-img-overlay d-flex" onclick="location.href='https://senoredbot.github.io/unit-4-game/index.html'">
+                        <div class="my-auto mx-auto text-center">
+                            <h4 class="card-title">RPG Game</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">
+                        A small role playing game. You'll be able to select a character and then fight the remaining defenders until they win or you win.
+                      </p>
+                      <a href="https://senoredbot.github.io/unit-4-game/index.html" class="btn btn-primary btn-lg raised">View Website</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-fluid card-img" src="./assets/images/triviaGame2.PNG" alt="">
+                    <div class="card-img-overlay d-flex" onclick="location.href='https://senoredbot.github.io/TriviaGame/index.html'">
+                        <div class="my-auto mx-auto text-center">
+                            <h4 class="card-title">Trivia Game</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">
+                          A trivia game all about Eminem. Give it a try, its harder than you think! With this project I demonstrate the ability to user timeouts to allow the game to progress with no next button.
+                      </p>
+                      <button type="button" class="btn btn-primary btn-lg raised" onclick="location.href='https://senoredbot.github.io/TriviaGame/index.html'">View Website</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="portRow2">
+              <div class="card-deck">
+                  <div class="card">
+                      <img class="img-fluid card-img" src="./assets/images/giphy3.PNG" alt="">
+                      <div class="card-img-overlay d-flex" onclick="location.href='https://senoredbot.github.io/GifTastic/index.html'">
+                          <div class="my-auto mx-auto text-center">
+                              <h4 class="card-title">Giphy Searcher</h4>
+                          </div>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                            This project allows the user to search gifs. Initially they will have 15 different sports to choose from with the option to add any search term they want.
+                        </p>
+                        <button type="button" class="btn btn-primary btn-lg raised onclick="location.href='https://senoredbot.github.io/GifTastic/index.html'"">View Website</button>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img class="img-fluid card-img" src="./assets/images/openRoaders1.PNG" alt="">
+                      <div class="card-img-overlay d-flex" onclick="location.href='https://senoredbot.github.io/project1/index.html'">
+                          <div class="my-auto mx-auto text-center">
+                              <h4 class="card-title">Open Roaders</h4>
+                          </div>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          Alex and I created an website that solved the age old problem: <strong>Planning Road Trips is HARD!</strong>
+                        </p>
+                        <button type="button" class="btn btn-primary btn-lg raised onclick="location.href='https://senoredbot.github.io/project1/'"">View Website</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      <br>
     </main>
     <footer class="footer">
       <div class="container text-center pt-lg-4 pt-md-4 pt-sm-3 pt-xs-3 text-white">
           <p id="footerCopyright">Copyright &#169;</p>
       </div>
     </footer>
+
+    <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
   </body>
 </html>

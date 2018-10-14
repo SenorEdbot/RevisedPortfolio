@@ -34,7 +34,7 @@ footer {
     width: 100%;
     height: var(--height-footer); /* Set the fixed height of the footer here */
 }
-p {
+#p1, #p2, #p3, #p4 {
     line-height: 1.7;
     font-size: 18px;
     color: #777777;
@@ -69,8 +69,46 @@ hr {
     font-size: 20px;
     background-color: #4aaaa5;
 }
+.card-title {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #4aaaa5;
+    min-width: 20rem;
+}
 .btn {
     background-color: #4aaaa5;
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #4aaaa5;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #56ccc6;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #4aaaa5;
+    box-shadow: none;
+}
+
+.btn-primary.raised {
+	box-shadow: 0 3px 0 0 #3b8a86;
+}
+.btn-primary.raised:active, .btn-primary.raised.active {
+	background: #4aaaa5;
+	box-shadow: none;
+	margin-bottom: -3px;
+	margin-top: 3px;
 }
 #footerCopyright {
     line-height: 1;
@@ -82,4 +120,13 @@ hr {
 }
 #p2, #p3, #p4, #readMoreText {
     display: none;
+}
+#portRow1 {
+    margin-bottom: 2rem;
+}
+#portRow2 {
+    margin-top: 2rem;
+}
+.card {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
