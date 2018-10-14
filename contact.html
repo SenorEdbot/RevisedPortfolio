@@ -2,11 +2,16 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
     <title>Contact</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/button.css">
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-light p-0">
@@ -30,7 +35,7 @@
         <hr>
         <div class="row">
           <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <form>
+            <form id="contactForm">
               <div class="form-group">
                 <label for="contactFormName">Name</label>
                 <input type="text" class="form-control" id="contactFormName" placeholder="John Smith">
@@ -43,7 +48,8 @@
                 <label for="contactFormMessage">Message</label>
                 <textarea id="contactFormMessage" cols="30" rows="7" class="form-control"></textarea>
               </div>
-              <button type="button" class="btn btn-primary btn-lg raised">Submit</button>            </form>
+              <button type="button" class="btn btn-primary btn-lg raised" id="formSubmit">Submit</button>            
+            </form>
           </div>
         </div>          
       </div>
@@ -54,5 +60,7 @@
           <div id="footerCopyright">Copyright &#169;</div>
       </div>
     </footer>
+
+    <script type="text/javascript" src="assets/javascript/contact.js"></script>
   </body>
 </html>
