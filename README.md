@@ -3,6 +3,9 @@
 
 ## Welcome! 
 
+### Functionality
+The contact form will store any user data in firebase for me to view later.
+
 ### Projects
 Please feel free to browse through my projects here on GibHub. The links on the portfolio page will take you directly to them.  
 Below is a brief summary about my projects.
